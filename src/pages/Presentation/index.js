@@ -49,7 +49,7 @@ import bgImage from "assets/images/z-videos/ContentElegantCockroach-size_restric
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
+      {/* <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
@@ -58,9 +58,9 @@ function Presentation() {
           color: "info",
         }}
         sticky
-      />
+      /> */}
       <MKBox
-        minHeight="75vh"
+        minHeight="100vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -99,7 +99,7 @@ function Presentation() {
           </Grid>
         </Container>
       </MKBox>
-      <Card
+      {/* <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -218,7 +218,7 @@ function Presentation() {
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </MKBox> */}
     </>
   );
 }
