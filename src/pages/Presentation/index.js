@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/z-videos/ContentElegantCockroach-size_restricted.gif";
 
 function Presentation() {
   return (
@@ -64,8 +64,10 @@ function Presentation() {
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundColor: "#111011",
+          backgroundSize: "540px 304px",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
@@ -83,7 +85,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Currently building a full site.{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +94,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              In the meantime, shoot me a message at (email)
             </MKTypography>
           </Grid>
         </Container>
