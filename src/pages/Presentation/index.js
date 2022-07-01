@@ -80,6 +80,7 @@ function Presentation() {
               alt="Dark Souls bonfire burning GIF"
               mt={0}
               mb={10}
+              width="75%"
             />
             <MKTypography
               variant="h1"
@@ -101,7 +102,16 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              In the meantime, shoot me a message at (email)
+              If you&#39;re looking for the NYC conductor/horn player, then you found him!
+            </MKTypography>
+            <MKTypography
+              variant="body1"
+              color="white"
+              textAlign="center"
+              px={{ xs: 6, lg: 12 }}
+              mt={1}
+            >
+              Shoot me a message at zach@zachnicely.com
             </MKTypography>
           </Grid>
         </Container>
