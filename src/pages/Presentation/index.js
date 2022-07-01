@@ -73,14 +73,19 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={12} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKBox
-              size="540px 304px"
+              size={{ xs: "486px 273.6px", s: "540px 304px" }}
               component="img"
               src={bgImage}
               alt="Dark Souls bonfire burning GIF"
               mt={0}
               mb={10}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
             />
             <MKTypography
               variant="h1"
