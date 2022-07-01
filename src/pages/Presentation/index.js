@@ -73,7 +73,7 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={9} justifyContent="center" mx="auto">
             <MKBox
               size={{ xs: "486px 273.6px", s: "540px 304px" }}
               component="img"
