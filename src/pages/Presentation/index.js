@@ -16,34 +16,35 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
+// import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+// // Material Kit 2 React examples
+// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
+// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+// // Presentation page sections
+// import Counters from "pages/Presentation/sections/Counters";
+// import Information from "pages/Presentation/sections/Information";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+// import Pages from "pages/Presentation/sections/Pages";
+// import Testimonials from "pages/Presentation/sections/Testimonials";
+// import Download from "pages/Presentation/sections/Download";
 
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// // Presentation page components
+// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
-// Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
+// // Routes
+// import routes from "routes";
+// import footerRoutes from "footer.routes";
 
 // Images
+// bgImage src: https://gfycat.com/contentelegantcockroach
 import bgImage from "assets/images/z-videos/ContentElegantCockroach-size_restricted.gif";
 
 function Presentation() {
@@ -63,17 +64,24 @@ function Presentation() {
         minHeight="100vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          // backgroundImage: `url(${bgImage})`,
           backgroundColor: "#111011",
-          backgroundSize: "540px 304px",
-          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={12} justifyContent="center" mx="auto">
+            <MKBox
+              size="540px 304px"
+              component="img"
+              src={bgImage}
+              alt="Dark Souls bonfire burning GIF"
+              mt={0}
+              mb={10}
+            />
             <MKTypography
               variant="h1"
               color="white"
