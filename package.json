@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
+  "license": "MIT License",
   "description": "React version of Material Kit 2 by Creative Tim",
   "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
   "bugs": {
