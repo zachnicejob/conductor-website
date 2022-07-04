@@ -1,13 +1,14 @@
 # Temporary Landing Page: Conductor Website
 <div id="badges">
   <img src="https://img.shields.io/github/last-commit/zachnicejob/conductor-website/temp-landing-page?style=for-the-badge" alt="Last Branch Commit"/>
-</div>
+</div>&nbsp;
 
 <div>
   <img src="src/assets/images/z-videos/Temp-Landing-Page-gif.gif" width="600" height="300"/>
-</div>
+</div>&nbsp;
 
-This is a temporary landing page for my personal artist website. I put this up so folks can find me while I build the full site.
+This is a temporary landing page for my personal artist website.
+I put this up so folks can find me while I build the full site.
 
 ---
 
@@ -20,8 +21,10 @@ This is a temporary landing page for my personal artist website. I put this up s
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>&nbsp;
 </div>
+
+- <a href="https://www.creative-tim.com/product/material-kit-react"> Material Kit 2 React React - v2.0.0 </a>
 
 ---
 
