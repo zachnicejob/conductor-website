@@ -30,7 +30,10 @@ This is a temporary landing page for my personal artist website. I put this up s
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 ---
-### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> Reach Out!
+<h3> 
+    Reach Out! 
+    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+</h3>
 
 <div id="badges">
   <a href="https://www.linkedin.com/in/zachary-nicely/">
