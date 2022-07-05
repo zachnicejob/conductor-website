@@ -7,6 +7,7 @@ COPY . .
 RUN yarn cache clean
 RUN yarn install
 COPY . .
+RUN yarn prettier -w "src/assets/**/*.js"
 RUN yarn build
 
 #webserver
