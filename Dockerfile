@@ -1,19 +1,16 @@
-#build
 FROM node:14.17.1 as build
-ARG BUILD_CONTEXT
 
-WORKDIR /base
+WORKDIR /home/ui
 COPY package.json .
 COPY yarn.lock .
-COPY ./apps/$BUILD_CONTEXT/package.json apps/$BUILD_CONTEXT/
+COPY . .
 RUN yarn install
-COPY ./apps/$BUILD_CONTEXT apps/$BUILD_CONTEXT
-RUN yarn build:$BUILD_CONTEXT
+COPY . .
+RUN yarn build
 
 #webserver
 FROM nginx:stable-alpine
-ARG BUILD_CONTEXT
-COPY --from=build /base/apps/$BUILD_CONTEXT/build /usr/share/nginx/html
+COPY --from=build /home/ui/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
