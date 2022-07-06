@@ -3,6 +3,5 @@ version: "3.9"
 services:
   conductor-website:
     image: zachnicejob/conductor-website-ui:1.0
-    build: ./public
     ports:
       - "80:80"
