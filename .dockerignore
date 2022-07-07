@@ -7,5 +7,9 @@ build
 # copying node_modules is slow and we'll need a fresh install anyway
 node_modules
 
+# no docker artifacts
+*Dockerfile*
+.dockerignore
+
 # no documentation
 *.md
