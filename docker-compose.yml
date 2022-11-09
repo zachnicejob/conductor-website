@@ -1,7 +1,0 @@
-version: "3.9"
-
-services:
-  conductor-website:
-    image: zachnicejob/conductor-website-ui:1.0
-    ports:
-      - "80:80"
