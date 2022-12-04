@@ -1,0 +1,11 @@
+@import 'sass/mystyles.scss';
+
+$banner-image-background:  #020635;
+
+body {
+    background-color: $banner-image-background;
+}
+
+.container {
+    margin-bottom: 0;
+}
