@@ -1,13 +1,16 @@
+import './Footer.scss';
+
 function Footer () {
     return (
         <footer className="footer">
-        <div className="content has-text-centered">
-            <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
-        </div>
+            <div className="content has-text-centered">
+                <p>
+                This website was built by...<strong>me!</strong> In addition to being a conductor, I'm a full-stack software engineer specializing in Java Cloud. This website is a React app and working sandbox to practice and demonstrate my front-end capabilities.
+                </p>
+            </div>
+            {/* <figure className="icon">
+                <img className="center" src={require("../assets/Spirtual_Stones.png")} />
+            </figure> */}
         </footer>
     )
 }
