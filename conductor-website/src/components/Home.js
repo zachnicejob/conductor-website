@@ -1,5 +1,6 @@
 import './Home.scss';
 import { info } from '../assets/constants.info';
+import ContactForm from './ContactForm';
 function Home() {
     return (  
         <body>
@@ -40,6 +41,9 @@ function Home() {
                         </div>
                     </div>
                 </level>
+            </section>
+            <section className="bio">
+                <ContactForm></ContactForm>
             </section>
         </body>
     )
