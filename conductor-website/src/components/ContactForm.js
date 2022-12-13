@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 import { auth } from '../auth/auth';
+import './ContactForm.scss';
 
 init(`${auth.userId}`);
 const ContactForm = () => {
@@ -9,8 +10,14 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
+    const [renderWarning, setRenderWarning] = useState(false);
 
-    const submit = () => {
+    const submit = (e) => {
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+        const isValidEmail = emailRegex.test(email);
+        e.preventDefault();
+
+
         if (name && isValidEmail && message) {
            const serviceId = `${auth.serviceId}`;
            const templateId = `${auth.templateId}`;
@@ -27,16 +34,14 @@ const ContactForm = () => {
             setName('');
             setEmail('');
             setMessage('');
+            setRenderWarning(false);
             setEmailSent(true);
         } else {
-            alert('Please fill in all fields.');
+            setRenderWarning(true);
         }
     }
 
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
+    
 
     return (
         <form>
@@ -47,27 +52,31 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="field">
-                <label className="label">email</label>
-                <div class="control">
-                    <input class="input is-danger" type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+                <label className="label">Email</label>
+                <div className="control">
+                    {emailSent ? <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} /> : 
+                        <input className="input" required type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+                    }
                 </div>
             </div>
             <div className="field">
                 <label className="label">Message</label>
                 <div className="control">
-                    <textarea className="textarea" placeholder="Textarea" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                    <textarea className="textarea" placeholder="What's up?" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 </div>
             </div>
             <div className="field is-grouped">
                 <div className="control">
                     <button className="button is-link" onClick={submit}>Submit</button>
                 </div>
-                <div className="control">
+                {/* <div className="control">
                     <button className="button is-link is-light">Cancel</button>
-                </div>
+                </div> */}
             </div>
             <div className="field">
-                <span className={emailSent ? "text" : "is-invisible"}>Thank you for your message, I'll get ya back soon!</span>
+                {renderWarning ? <span className="text">Oops, please fill each field properly.</span> : 
+                    <span className={emailSent ? "text" : "is-invisible"}>Thank you for your message, I'll get ya back soon!</span>
+                }
             </div>
         </form>
     );
