@@ -45,14 +45,15 @@ const ContactForm = () => {
 
     return (
         <form>
+            <div className="title is-1 is-centered bg-variant-title">Contact Me</div>
             <div className="field">
-                <label className="label">Name</label>
+                <label className="label bg-variant-title">Name</label>
                 <div className="control">
                     <input class="input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
                 </div>
             </div>
             <div className="field">
-                <label className="label">Email</label>
+                <label className="label bg-variant-title">Email</label>
                 <div className="control">
                     {emailSent ? <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} /> : 
                         <input className="input" required type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
@@ -60,7 +61,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="field">
-                <label className="label">Message</label>
+                <label className="label bg-variant-title">Message</label>
                 <div className="control">
                     <textarea className="textarea" placeholder="What's up?" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 </div>
@@ -73,7 +74,7 @@ const ContactForm = () => {
                     <button className="button is-link is-light">Cancel</button>
                 </div> */}
             </div>
-            <div className="field">
+            <div className="field bg-variant-title">
                 {renderWarning ? <span className="text">Oops, please fill each field properly.</span> : 
                     <span className={emailSent ? "text" : "is-invisible"}>Thank you for your message, I'll get ya back soon!</span>
                 }

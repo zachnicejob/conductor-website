@@ -6,10 +6,10 @@ function Home() {
         <body>
             <section class="section">
                 <div class="container">
-                <h1 class="title is-1">
+                <h1 class="title is-1 bg-variant-title">
                     Zach Nicely
                 </h1>
-                <p class="subtitle is-1">
+                <p class="subtitle is-1 bg-variant-subtitle">
                     Conductor
                 </p>
                 </div>
