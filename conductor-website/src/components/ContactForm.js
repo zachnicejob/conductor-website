@@ -1,26 +1,25 @@
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
-import { auth } from '../auth/auth';
 import './ContactForm.scss';
 
-init(`${auth.userId}`);
+init(`${process.env.REACT_APP_EMAILJS_USER_ID}`);
+
 const ContactForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
     const [renderWarning, setRenderWarning] = useState(false);
-
+  
     const submit = (e) => {
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
         const isValidEmail = emailRegex.test(email);
         e.preventDefault();
-
-
+        
         if (name && isValidEmail && message) {
-           const serviceId = `${auth.serviceId}`;
-           const templateId = `${auth.templateId}`;
+           const serviceId = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
+           const templateId = `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
            const templateParams = {
             name,
             email,
@@ -42,7 +41,7 @@ const ContactForm = () => {
     }
 
     
-
+    
     return (
         <form>
             <div className="title is-1 is-centered bg-variant-title">Contact Me</div>
