@@ -11,6 +11,8 @@
 This is a temporary landing page for my personal artist website.
 I put this up so folks can find me while I build the full site.
 
+I deconstructed the <a href="https://demos.creative-tim.com/material-kit-react/#/presentation"> Material Kit 2 React </a> template by Creative Tim to explore its structure and practice navigating a larger application to find exactly what I need.
+
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
