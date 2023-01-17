@@ -20,30 +20,34 @@ function Home() {
                 </figure>
             </section>
             <section className="bio">
-                <level>
+                {/* <div className="container"> */}
                     <div className="card">
                         <div className="card-content">
-                            <div className="content">
-                                <p className="title is-spaced">
-                                    {info.bio.hd}
-                                    <span>{info.bio.span}</span>
-                                </p>
-                                <p className="subtitle">
-                                    {info.bio.p1}
-                                </p>
-                                <p className="subtitle">
-                                    {info.bio.p2}
-                                </p>
-                                <p className="subtitle">
-                                    {info.bio.p3}
-                                </p>
-                            </div>
+                        <div className="content">
+                            <p className="title is-spaced">
+                                {info.bio.hd}
+                                <span>{info.bio.span}</span>
+                            </p>
+                            <p className="subtitle">
+                                {info.bio.p1}
+                            </p>
+                            <p className="subtitle">
+                                {info.bio.p2}
+                            </p>
+                            <p className="subtitle">
+                                {info.bio.p3}
+                            </p>
+                        {/* </div> */}
                         </div>
                     </div>
-                </level>
+                    </div>
             </section>
             <section className="bio">
-                <ContactForm></ContactForm>
+                <div className="card">
+                    <div className="card-content">
+                        <ContactForm></ContactForm>
+                    </div>
+                </div>
             </section>
         </body>
     )
