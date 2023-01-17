@@ -1,30 +1,23 @@
 @charset "utf-8";
-@import "../node_modules/bulma";
 // Import a Google Font
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
 $lightning-portrait-color: #020635;
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
-// Footer
-$footer-background-color: #fafafa;
-$footer-color: false;
-$footer-padding: 3rem 1.5rem 6rem;
+$mischka: #ced1da;
+$fountainblue: #57ADBF;
+$shipcove: #798dc5;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+$primary: #485fc7;
+// $primary: $shipcove;
+// $primary: $lightning-portrait-color;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+@import "../node_modules/bulma";
 
 .bg-variant-title {
   color: #ffffff;
@@ -34,8 +27,6 @@ $fullhd-enabled: false;
   color: $grey-light;
 }
 
-.footer{
-    background-color: $footer-background-color;
-    color: $footer-color;
-    padding: $footer-padding;
-  }
+.input, .textarea {
+  background-color: $grey-lightest;
+}
