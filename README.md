@@ -37,5 +37,4 @@ This is my artist website for my work as an orchestra conductor. This website is
   <a href="https://www.youtube.com/channel/UCpIkilfnz8My3t-rLeYcE6Q">
     <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
   </a>
-  <img src="https://img.shields.io/github/last-commit/zachnicejob/conductor-website/temp-landing-page?style=for-the-badge" alt="Last Branch Commit"/>
 </div>
