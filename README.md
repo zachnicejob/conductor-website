@@ -1,7 +1,7 @@
 # Conductor Website
 
 <div id="badges">
-  <img src="https://img.shields.io/github/last-commit/zachnicejob/conductor-website/temp-landing-page?style=for-the-badge" alt="Last Branch Commit"/>
+  <img src="https://img.shields.io/github/last-commit/zachnicejob/conductor-website/v1.01?style=for-the-badge" alt="Last Branch Commit"/>
 </div>&nbsp;
 
 <div>
